@@ -1,0 +1,158 @@
+/*this css code is same as in login so comments are in login.css*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*
+{margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+}
+/*BODY SECTION*/
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("23.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+/* Navbar styling */
+#navbar{
+
+    display:flex;
+    align-items: center;
+   position: relative;
+   font-family: 'Raleway', sans-serif;
+   display: flex;
+   float: left;
+   bottom: 45%;
+}
+
+#navbar::before{
+
+content:"";
+position:absolute;
+height: 100%;
+width: 100%;
+background-color: black;
+z-index: -1;
+opacity: 0.3;
+
+}
+
+
+
+#navbar ul{
+
+   display: flex;
+}
+
+#navbar ul li{
+
+list-style:none;
+font-size: 1.3rem;
+
+}
+
+
+#navbar ul li a{
+
+  border-radius: 10em;
+  color:rgb(26, 19, 232);
+   display:block;
+   border-radius: 20px;
+   padding: 3px 22px;
+   text-decoration: none;
+   top: 0px;
+   left: 0px;
+   
+   }
+   
+#navbar ul li a:hover{
+
+  color:rgb(233, 13, 13);
+  background-color: white;
+    
+    }
+/*LOGIN BOX*/
+.container{
+    background: rgb(15, 15, 15);
+    width: 350px;
+    height: 450px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+padding: 2em;
+position: absolute;
+right: 40%;
+}
+input[type='text'], [type='email'], select, textarea {
+	background: none;
+  border: none;
+	border-bottom: solid 2px #f61010;
+	color: #262222;
+	font-size: 1.000em;
+  font-weight: 400;
+  letter-spacing: 1px;
+	margin: 0em 0 1.875em 0;
+	padding: 0 0 0.875em 0;
+  text-transform: uppercase;
+	width: 100%;
+	transition: all 0.3s;
+}
+.heading{
+    font-size: 2em;
+    margin-bottom: 0.5em;
+
+}
+.box {
+    margin: 0.2em 0;
+}
+.container .box p{
+    color: rgb(236, 33, 6);
+}
+.container.box div{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    margin: 0.5em 0;
+}
+
+.container.box div::before{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 102%;
+    height: 105%;
+    border-radius: 10px;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+}
+/*BUTTON SECTION*/
+.Loginbtn{
+    width: 102%;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    margin: 0.5em 0;
+    transform: translate(-1%);
+    cursor: pointer;
+    color: white;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    transition: all.4s;
+}
+.Loginbtn:hover{
+    transform: translate(-1%, 5%);
+    box-shadow: 0 0 10px #0dd21a65;
+}
+.txt{
+    font-size: 0.8em;
+    margin-top: 0.5em;
+    text-align: center;
+    color: #d20e81;
+}
+.txt a{
+    color: rgba(255, 255, 255, 0.934);
+}
